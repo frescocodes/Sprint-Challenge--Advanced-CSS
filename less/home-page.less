@@ -72,6 +72,7 @@
     p {
       margin-top: 13px;
     }
+
   }
 
   .walk {
@@ -81,8 +82,14 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      margin-top: 25px;
+      .flexCol(@dir: column-reverse;);
+      padding: 25px 20px;
+    } // end mq
+
     .walk-text {
-      width: 50%;
+      width: 100%;
 
       h3 {
         margin-bottom: 10px;
@@ -93,20 +100,32 @@
       }
 
       .btn {
-        .myBtn(@f-fam: 'Ubuntu'; @bg: #000; @rad: 5px; @fcolor: #fff; @fsize: 1.8rem; @pad: 6px 17px; @border: 1px solid @btn-bg-color;);
+        .myBtn(@f-fam: 'Ubuntu'; @bg: @btn-bg-color; @rad: 5px; @fcolor: #fff; @fsize: 1.8rem; @pad: 6px 17px; @border: 1px solid @btn-bg-color;);
 
-      }
+
+        @media @phone {
+          .myBtn(@f-fam: 'Ubuntu'; @bg: @btn-bg-color; @rad: 5px; @fcolor: #fff; @fsize: 1.8rem; @pad: 25px 195px; @border: 1px solid @btn-bg-color;);
+        } // end btn mq
+
+      } // end btn 
 
       .btn:hover{
           background-color: @wild-sand;
           color: #000;
           cursor: pointer;
-      }
-    }
+
+      } // end btn hover
+    } // end walk text
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 25px;
+      }
       
       img {
         width: 100%;
@@ -114,6 +133,6 @@
         border-radius: 10px;
       }
 
-    }
-  }
+    } // end walk img
+  } // end walk
 }// home
