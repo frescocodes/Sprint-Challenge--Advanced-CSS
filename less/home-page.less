@@ -4,6 +4,14 @@
 
   .intro {
 
+    .banner {
+      width: 100%;
+
+      @media @phone {
+        width: 100%;
+      }
+    } // end banner 
+
     h2 {
       padding: 15px;
     }
@@ -12,20 +20,47 @@
       padding:0 15px;
     }
   
-  }
+  } // end intro 
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 
+
+    .blast {
+      display: block;
+
+      @media @phone {
+        width: 100%;
+      } // end mq
+    } // end blast
+
+
+    .sky {
+      display: block;
+
+      @media @phone {
+        display: none;
+      } // end mq
+    } // end sky
+
+    .launch {
+      display: block;
+      
+      @media @phone {
+        display: none;
+      } // end mq
+    } // end launch
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
-  }
+
+    } // end img 
+  } // end space images 
 
   .visit-planets {
     padding: 15px;

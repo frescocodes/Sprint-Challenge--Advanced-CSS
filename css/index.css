@@ -155,13 +155,23 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+.big-container {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .big-container {
+    width: 100%;
+  }
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
-.big-container {
-  width: 100%;
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
 }
 .nav-wrapper {
   align-items: center;
@@ -170,6 +180,7 @@ p {
   flex-direction: column;
   justify-content: space-around;
   height: 100px;
+  width: 100%;
 }
 .nav-wrapper h1 {
   font-size: 4rem;
@@ -177,7 +188,12 @@ p {
 .nav-wrapper .links {
   display: flex;
   justify-content: space-around;
-  width: 400px;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .nav-wrapper .links {
+    width: 80%;
+  }
 }
 .nav-wrapper .links a {
   text-decoration: none;
@@ -194,6 +210,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro .banner {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .intro .banner {
+    width: 100%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -204,6 +228,30 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+.home .space-images .blast {
+  display: block;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
+.home .space-images .sky {
+  display: block;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+.home .space-images .launch {
+  display: block;
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;

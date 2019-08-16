@@ -15,8 +15,12 @@
 
 
 // general use
-.bigHead(@fsize; @fcolor; @ffam;){
-    color: @fcolor;
-    font-size: @fsize;
-    font-family: @ffam;
+.flexCenter(){
+    display: flex;
+    justify-content: center;
+}
+
+.flexCol(@dir){
+    display: flex;
+    flex-direction: @dir;
 }
