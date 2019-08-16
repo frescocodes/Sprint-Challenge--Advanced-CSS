@@ -1,1 +1,22 @@
 // Mixins Here
+
+
+// button maker
+.myBtn(@f-fam; @bg; @rad; @fcolor; @fsize; @pad; @border;){
+    font-family: @f-fam;
+    background-color: @bg;
+    border-radius: @rad;
+    color: @fcolor;
+    padding: @pad;
+    border: @border;
+    font-size: @fsize;
+    text-align: center;
+}
+
+
+// general use
+.bigHead(@fsize; @fcolor; @ffam;){
+    color: @fcolor;
+    font-size: @fsize;
+    font-family: @ffam;
+}
