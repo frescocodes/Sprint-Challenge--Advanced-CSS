@@ -238,6 +238,13 @@ footer {
 }
 .home .walk .walk-text .btn {
   font-family: 'Ubuntu', sans-serif;
+  background-color: #22283A;
+  border-radius: 5px;
+  color: #fff;
+  padding: 6px 17px;
+  border: 1px solid #22283A;
+  font-size: 1.8rem;
+  text-align: center;
 }
 .home .walk .walk-img {
   width: 46%;
